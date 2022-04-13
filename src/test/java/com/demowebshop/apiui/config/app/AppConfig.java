@@ -15,4 +15,12 @@ public interface AppConfig extends Config {
 
     @Key("apiUrl")
     String getApiUrl();
+
+    @Key("login")
+    @DefaultValue("test@test.test12344.com")
+    String getLogin();
+
+    @Key("password")
+    @DefaultValue("test1234")
+    String getPassword();
 }

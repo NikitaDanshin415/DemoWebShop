@@ -8,6 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
 
 public class BaseTest {
 
@@ -15,6 +16,7 @@ public class BaseTest {
     static void beforeAll() {
        new SettingTest().configure();
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        open("");
     }
 
     @AfterEach

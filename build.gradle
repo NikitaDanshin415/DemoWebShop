@@ -28,9 +28,10 @@ dependencies {
     testImplementation('org.assertj:assertj-core:3.22.0')
     testImplementation('org.slf4j:slf4j-simple:1.7.36')
     testImplementation('com.fasterxml.jackson.core:jackson-databind:2.13.2.2')
-    testImplementation('io.rest-assured:rest-assured:4.4.0')
+    testImplementation('io.rest-assured:rest-assured:5.0.1')
     testImplementation('io.qameta.allure:allure-rest-assured:2.17.3')
-    testImplementation('org.aeonbits.owner:owner:1.0.4')
+    testImplementation('org.aeonbits.owner:owner:1.0.12')
+
 
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")

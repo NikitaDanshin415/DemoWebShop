@@ -2,8 +2,14 @@
 Selenide + RestAssured
 
 # http://demowebshop.tricentis.com/
-# Тест для проверки удаления товаров из коризины.
+## Тест для проверки удаления товаров из коризины.
 Авторизация и добавление товара в корзину происхоидт через REST запрос.
+
+## Стек
+UI - Selenide<br>
+API - RestAssured<br>
+Configure - Owner
+
 
 # Параметры для запуска
 

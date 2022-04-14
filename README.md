@@ -8,7 +8,8 @@ Selenide + RestAssured
 ## Стек
 UI - Selenide<br>
 API - RestAssured<br>
-Configure - Owner
+Configure - Owner<br>
+Report - Allure
 
 
 # Параметры для запуска

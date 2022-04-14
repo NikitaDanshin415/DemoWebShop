@@ -8,19 +8,31 @@ import static com.codeborne.selenide.Selenide.$;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class HomePage {
-    private final SelenideElement loginLink =  $("a[href='/login']");
     private final SelenideElement emailLink =  $("a[href='/customer/info']");
+    private final SelenideElement shoppingCartLink =  $("#topcartlink .ico-cart");
+    private final SelenideElement miniCartBlock =  $("#flyout-cart.flyout-cart");
 
-    public void clickLogin(){
-        loginLink
-            .click();
 
-        assertThat(WebDriverRunner.getWebDriver().getCurrentUrl())
-            .contains("/login");
-    }
-
-    public void userEmailIs(String email){
+    public HomePage userEmailIs(String email){
         emailLink
             .shouldHave(Condition.text(email));
+
+        return this;
     }
+
+    public HomePage hoverShoppingCart(){
+        shoppingCartLink
+            .hover();
+
+        miniCartBlock
+            .shouldHave(Condition.cssClass("active"));
+        return this;
+    }
+
+    public HomePage clickShoppingCart(){
+        shoppingCartLink
+            .click();
+        return this;
+    }
+
 }

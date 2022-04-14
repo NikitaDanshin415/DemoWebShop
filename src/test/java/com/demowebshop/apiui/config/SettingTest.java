@@ -13,7 +13,7 @@ public class SettingTest {
     public void configure(){
         Configuration.browser = WebDriverProvider.config.getBrowser();
         Configuration.baseUrl = App.config.getWebUrl();
-        RestAssured.basePath = App.config.getApiUrl();
+        RestAssured.baseURI = App.config.getApiUrl();
 
         SelenideLogger.addListener("allure", new AllureSelenide());
 

@@ -5,8 +5,7 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
     "system:properties",
-    "classpath:config/webDriverConfig.properties",
-    "classpath:config/remote.properties"
+    "classpath:config/remoteWebDriverConfig.properties"
 })
 public interface WebDriverConfig extends Config {
     @Key("browser")

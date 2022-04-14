@@ -5,8 +5,8 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
     "system:properties",
-    "classpath:config/app.properties",
-    "classpath:config/remote.properties"
+    "classpath:config/appLocal.properties",
+    "classpath:config/appRemote.properties"
 })
 public interface AppConfig extends Config {
 
@@ -17,10 +17,8 @@ public interface AppConfig extends Config {
     String getApiUrl();
 
     @Key("login")
-    @DefaultValue("test@test.test12344.com")
     String getLogin();
 
     @Key("password")
-    @DefaultValue("test1234")
     String getPassword();
 }

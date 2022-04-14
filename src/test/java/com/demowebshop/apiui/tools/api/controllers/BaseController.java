@@ -11,7 +11,7 @@ public abstract class BaseController {
 
     protected Map<String, String> getMapParams(Object obj) {
         Map<String, String> map =
-            new ObjectMapper().convertValue(obj, new TypeReference<>() {
+            new ObjectMapper().convertValue(obj, new TypeReference<Map<String, String>>() {
             });
         map.values().removeAll(Collections.singleton(null));
 

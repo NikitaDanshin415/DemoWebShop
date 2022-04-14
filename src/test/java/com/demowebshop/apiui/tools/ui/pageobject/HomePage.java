@@ -2,10 +2,10 @@ package com.demowebshop.apiui.tools.ui.pageobject;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 
 public class HomePage {
     private final SelenideElement emailLink =  $("a[href='/customer/info']");
@@ -13,6 +13,7 @@ public class HomePage {
     private final SelenideElement miniCartBlock =  $("#flyout-cart.flyout-cart");
 
 
+    @Step("Логин пользователя должен быть равен {email}")
     public HomePage userEmailIs(String email){
         emailLink
             .shouldHave(Condition.text(email));
@@ -20,6 +21,7 @@ public class HomePage {
         return this;
     }
 
+    @Step("Навестись на ссылку корзины")
     public HomePage hoverShoppingCart(){
         shoppingCartLink
             .hover();
@@ -29,6 +31,7 @@ public class HomePage {
         return this;
     }
 
+    @Step("Нажать на ссылку корзины")
     public HomePage clickShoppingCart(){
         shoppingCartLink
             .click();

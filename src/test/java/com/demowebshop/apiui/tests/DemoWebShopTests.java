@@ -28,7 +28,8 @@ public class DemoWebShopTests extends BaseTest {
 
     @Test()
     @DisplayName("Проверка удаления товара из корзины")
-    @Description("")
+    @Description("Авторизация и добавление товара в корзину реализовано через АПИ. " +
+        "На стороне UI проверяется наличие товара в корзине и удаление товара")
     void addProductToFolderTest() {
 
         step("Авторизация через API", () -> {

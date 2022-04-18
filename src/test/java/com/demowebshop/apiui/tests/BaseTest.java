@@ -1,4 +1,4 @@
-package com.demowebshop.apiui.tools.ui.helpers;
+package com.demowebshop.apiui.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

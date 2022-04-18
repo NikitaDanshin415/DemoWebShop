@@ -4,7 +4,6 @@ import com.demowebshop.apiui.config.app.App;
 import com.demowebshop.apiui.tools.api.controllers.AddProductToCartController;
 import com.demowebshop.apiui.tools.api.controllers.LoginController;
 import com.demowebshop.apiui.tools.api.models.request.LoginRequestModel;
-import com.demowebshop.apiui.tools.ui.helpers.BaseTest;
 import com.demowebshop.apiui.tools.ui.pageobject.CartPage;
 import com.demowebshop.apiui.tools.ui.pageobject.HomePage;
 
